@@ -1,0 +1,376 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	width: 10rem;
+	margin: 0 auto;
+    min-width: 320px;
+    background: #F4F4F4;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+a{
+	text-decoration: none;
+}
+.gc_header{
+	height: 1.173333rem;
+	background: #4DB9FF;
+	position: relative;
+	box-sizing: content-box;
+	 min-width: 4.266667rem;
+}
+.gc_header ul{
+	height: 1.173333rem;
+}
+.gc_header ul li{
+	float: left;
+	list-style: none;
+	display: inline-block;
+	font-size:0.453333rem ;
+	height: 1.173333rem;
+	line-height:1.173333rem;
+	width: 25%;
+	text-align: center;
+	font-family: simsun;
+    box-sizing: border-box;
+}
+.gc_header a{
+	display: block;
+	color: black;
+}
+/*.gc_header ul li:first-child{
+	border-bottom: 0.066667rem solid #3B77DB;
+	color: #3B77DB;
+}*/
+/*选中效果*/
+.gc_checked{
+	border-bottom: 0.066667rem solid #3B77DB;
+	color: #3B77DB;
+}
+/*二级标签栏*/
+.gc_tab2contain{
+	height: 0.72rem;
+    background: #E7E7E7;
+    font-size: 0.346667rem;
+    font-family: "微软雅黑";
+}
+.gc_tab2{
+    height: 0.72rem;
+    padding: 0 0.666667rem;
+}
+.gc_tab2 li{
+    height: 0.72rem;
+    line-height:  0.72rem;
+    display: inline-block;
+    float: left;  
+    box-sizing: border-box;
+}
+/*.gc_tab2 li:first-child{
+	border-bottom: 0.066667rem solid #3B77DB;
+	color: #3B77DB;
+}*/
+.gc_tab2 li:nth-child(2){
+	margin: 0 2.08rem;
+}
+/*旅游路线部分*/
+.gc_bikan{
+	padding: 0 0.533333rem;
+	   background: #F4F4F4;
+/*	   display: none;*/
+}
+.bikan_content{
+    height: 2.093333rem;
+    overflow: hidden;
+    font-size: 0.266667rem!important;
+}
+.bikan_dl{
+    padding-top: 0.066667rem;
+    display: block;
+	width: 100%;
+    font-size: 0.266667rem;
+    height: 0.52rem;
+    line-height: 0.52rem;
+    
+}
+.bikan_dl dt{
+	float: left;
+	display: inline-block;
+/*    padding-right:0.066667rem;*/
+    height: 0.453333rem;
+    line-height: 0.453333rem;
+}
+.bikan_dl dd{;
+	display: inline-block;
+	float: left;
+    padding: 0 0.1rem;
+   height: 0.453333rem;
+    line-height: 0.453333rem;
+}
+.bikan_dl dd:nth-last-child{
+	padding: 0 !important;
+}
+.bikan_select{
+    margin-top:0.2rem;
+}
+.bikan_checked{
+	background: #4DB9FF;
+	border-radius: 0.066667rem;
+}
+/*旅游套餐*/
+.gc_tourCon{
+	height: 3.333333rem;
+	margin-bottom:0.666667rem ;
+}
+.gc_textCon{
+	width: 5.333333rem;
+    padding-left: 0.266667rem;
+    padding-top: 0.266667rem;
+    float: right;
+}
+.gc_textCon p{
+	font-size:0.293333rem;
+    height: 0.666667rem;
+    line-height: 0.666667rem;
+	
+}
+.gc_textCon p:nth-of-type(1){
+	font-size:0.4rem;
+    font-weight: 700;
+}
+.gc_go{
+	font-size:0.293333rem;
+	float: right;
+	background: #4DB9FF;
+    border-radius: 0.066667rem;
+    display: block;
+    color: white;
+    height: 0.586667rem;
+    line-height: 0.586667rem;
+    padding: 0 0.133333rem;
+}
+.gc_imgBox>img{
+	display: block;
+/*	background: url(../img/gc_hotline.png) no-repeat;*/
+	width: 3.333333rem;
+    height: 3.333333rem;
+    background-size: contain;
+    float: left;
+}
+
+/*必看景点*/
+.gc_jindian{
+    padding: 0 0.666667rem;
+    	margin-top: 0.48rem;
+    	overflow: hidden;
+}
+.gc_jdCon{
+	height: 3.333333rem;
+    margin-bottom: 0.666667rem;
+}
+.gc_jdtextCon{
+	width: 5.333333rem;
+    float: right;
+}
+.gc_jdtext{
+    float: left;
+    padding-left: 0.266667rem;
+}
+.gc_jdtextCon p{
+	font-size:0.293333rem;
+    height: 0.506667rem;
+    line-height: 0.506667rem;
+    float: left;
+    width: 100%;
+}
+.gc_jdtextCon p:nth-of-type(1){
+	margin-top:0.373333rem ;
+	font-size:0.4rem;
+    font-weight: 700;
+}
+/*.gc_priceCon{
+	width: 100%;
+	 height: 0.586667rem;
+	 display: inline-block;
+}*/
+.gc_price{
+	margin:0.333333rem 0 ;
+	font-size:0.293333rem;
+	float: left;
+	background: #4DB9FF;
+    border-radius: 0.066667rem;
+    display: block;
+    color: white;
+    height: 0.586667rem;
+    line-height: 0.586667rem;
+    padding: 0 0.133333rem;
+}
+.gc_price a{
+	display: inline-block;
+	color: white;
+	font-family: "微软雅黑";
+}
+.gc_jdimgBox{
+	width: 3.333333rem;
+    height: 3.333333rem;
+    float: left;
+}
+.gc_jdimgBox a{
+	display: block;
+}
+.gc_jdimgBox img{
+	display: block;
+	width: 3.333333rem;
+    height: 3.333333rem;
+    background-size: contain;
+}
+.gc_hide{
+	display: none;
+}
+.gc_jieshao{
+
+}
+
+/*轮播图*/
+.gc_banner{
+    width: 10rem;
+    position: relative;
+    overflow: hidden;
+}
+.gc_banner ul:nth-child(1){
+    /*这个时候我们需要放下10张图片  我们宽度就要是父容器宽度的10倍*/
+    width: 700%;
+    -webkit-transform:translateX(-10.0rem);
+    transform: translateX(-10.0rem);
+}
+.gc_banner ul:nth-child(1) li{
+    width: 10.0rem;
+    float: left;
+    list-style: none;
+}
+.gc_banner ul:nth-child(1) li a{
+    width: 10.0rem;
+    display: block;
+}
+.gc_banner ul:nth-child(1) li a img{
+    width: 10.0rem;
+    display: block;
+}
+.gc_banner ul:nth-child(2){
+    position: absolute;
+    width: 2.266667rem;
+    height: 0.266667rem;
+    left: 50%;
+    bottom: 0.066667rem;
+    margin-left: -1.133333rem;
+}
+.gc_banner ul:nth-child(2) li{
+    float: left;
+    width: 0.266667rem;
+    height: 0.266667rem;
+    border-radius: 0.133333rem;
+    margin-left: 0.226667rem;
+    background: #fff
+}
+.gc_banner ul:nth-child(2) li.gc_now{
+    background: #4DB9FF;
+}
+.gc_banner ul:nth-child(2) li:first-child{
+    margin-left: 0;
+}
+.gc_now{
+	background: #4DB9FF;
+}
+/*景点详情介绍*/
+.gc_detTextCon{
+	padding: 0 0.666667rem;	
+}
+.gc_gaikuan{
+	margin-top: 0.2rem;
+}
+.gc_gaikuan p{
+	width: 100%;
+	font-size: 0.4rem;
+	color: #333333;
+	height: 0.733333rem;
+	line-height: 0.733333rem;
+}
+.gc_gaikuan p:first-child{
+	font-size: 0.453333rem;
+}
+.gc_gaikuan  .gc_btm{
+	width: 8.133333rem;
+	border-bottom:0.026667rem solid #DDDDDD;
+	margin: 0 0.266667rem;
+}
+.gc_tic{
+	display: inline-block;
+	height: 0.346667rem;
+	width: 0.373333rem;
+	background: url(../img/gc_icon.fw.png) no-repeat 0 0;
+	background-size:8.0rem 5.333333rem ;
+	line-height: 0.346667rem;
+	margin-right: 0.266667rem;
+}
+.gc_loc{
+	display: inline-block;
+	height: 0.466667rem;
+	width: 0.346667rem;
+	background: url(../img/gc_icon.fw.png) no-repeat 0 -0.666667rem;
+	background-size:8.0rem 5.333333rem ;
+	vertical-align: middle;
+	margin-right: 0.266667rem;
+}
+.gc_tel{
+	display: inline-block;
+	height:0.426667rem;
+	width: 0.413333rem;
+	background: url(../img/gc_icon.fw.png) no-repeat 0 -1.333333rem;
+	background-size:8.0rem 5.333333rem ;
+	vertical-align: middle;
+	margin-right: 0.266667rem;
+}
+.gc_jianjie{
+	margin-top: 0.4rem;
+}
+.gc_jianjie p{
+	font-size: 0.4rem;
+/*	height: 0.733333rem;*/
+	line-height: 0.733333rem;
+}
+.gc_jianjie p:first-child{
+	font-size: 0.453333rem;
+}
+.gc_pinjia{
+	margin-top: 0.4rem;
+}
+.gc_pinjia p{
+	font-size: 0.4rem;
+	height: 0.733333rem;
+	line-height: 0.733333rem;
+}
+.gc_pinjia p:first-child{
+	font-size: 0.453333rem;
+}
+/*底栏*/
+.gc_dilang{
+	position: absolute;
+	bottom: 0;
+	display: block;
+	width: 9.0rem;
+    height: 0.533333rem;
+    background: url(../img/gc_dilang.gif) no-repeat;
+    background-size: 9.0rem 0.533333rem; 
+    z-index: 10;
+}
+.gc_Container{
+	position: relative;
+}
+.gc_Container{
+	width: 100%;
+	height: 100%;
+}

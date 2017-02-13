@@ -1,0 +1,44 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    min-width: 4.66666667rem;
+    background: #e8e8e8;
+}
+
+.header {
+    width: 100%;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    background: #4dbaff;
+    text-align: center;
+    font-size: 0.45rem;
+    color: #fff;
+    margin: 0 auto;
+}
+
+.bottom {
+    width: 100%;
+    height: 1rem;
+    font-size: 0.4rem;
+    background: #f4f4f4;
+    padding: 0.5rem 0;
+    /*margin-top: 2rem;*/
+}
+
+.bottom ul{
+    margin-top: -0.15rem;
+}
+
+.bottom li {
+    height: 0.08rem;
+    width: 0.66666667rem;
+    background: #a6a6a6;
+    border-radius: 0.5rem;
+    margin: 0 auto;
+    margin-bottom: 0.067rem;
+}
+
+.bottom li:last-child{
+    margin-bottom: 0;
+}

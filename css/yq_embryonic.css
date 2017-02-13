@@ -1,0 +1,44 @@
+.yq_embryonic {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+.yq_embryonic li {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.yq_embryonic #embOne {
+  background: url("../img/yq_emb_bg1.png") no-repeat;
+  background-size: 100%;
+  position: relative;
+  z-index: 3;
+}
+.yq_embryonic #embTwo {
+  background: url("../img/yq_emb_bg2.png") no-repeat;
+  background-size: 100%;
+  z-index: 2;
+}
+.yq_embryonic #embThree {
+  background: url("../img/yq_emb_bg3.PNG") no-repeat;
+  background-size: 100%;
+  width: 100%;
+  z-index: 1;
+}
+.yq_embryonic #embThree a {
+  position: absolute;
+  bottom: 2.666667rem;
+  left: 50%;
+  margin-left: -1.613333rem;
+  width: 3.226667rem;
+  height: 0.826667rem;
+  line-height: 0.826667rem;
+  text-align: center;
+  border: 1px solid #FE5F0E;
+  color: #FE5F0E;
+  border-radius: 0.133333rem;
+  background: #FFF;
+  font-size: 0.333333rem;
+}

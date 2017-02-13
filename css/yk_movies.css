@@ -1,0 +1,185 @@
+body{
+	background-color: #E8E8E8;
+}
+.yk_layout{
+	min-width: 300px;/*适配小屏幕设备，为了保持布局正常*/
+	max-width: 750px;/*行业中设计图一般是640px 如果不限制，那么图片就会被拉伸，页面的显示效果会变差*/
+	margin: 0 auto;
+    position: relative;
+    
+}
+/*导航*/
+
+.yk_header{
+	min-width: 300px;
+    max-width: 750px;
+    margin: 0 auto;
+	position: fixed;
+	height: 1.1rem;
+	width: 100%;
+	background: #4DBAFF;
+	text-align: center;
+	font-size: 0.4rem;
+	line-height: 1.1rem;
+	color: #FFFFFF;
+	z-index: 10;
+}
+.yk_header a{
+	height: 1.1rem;
+	width: 1.1rem;
+}
+.yk_header img{
+	width: 100%;
+}
+.movies_t{
+	width: 4rem;
+	position: absolute;
+	left: 50%;
+	top: 0.2rem;
+	height: 0.75rem;
+	margin-left: -2rem;
+
+}
+.yk_header .title_l,
+.yk_header .title_r{
+	color: #3C78DB;
+	background: #FFF;
+	font-size: 0.4rem;
+	text-align: center;
+	width: 2rem;
+	height: 0.75rem;
+	line-height: 0.75rem;
+	float: left;
+}
+.title_l:visited,
+.title_r:visited{
+	background: #3B77DB;
+	color: #FFF;
+}
+.title_l{
+	border-radius:0.2rem 0 0 0.2rem;
+}
+.title_r{
+	border-radius:0 0.2rem 0.2rem 0;
+}
+
+/*轮播图*/
+.yk_banner{
+    width: 100%;
+    position: relative;
+    top: 1.1rem;
+    overflow: hidden;
+}
+.yk_banner ul:nth-child(1){
+    width: 1000%;
+    -webkit-transform:translateX(-10%);
+    transform: translateX(-10%);
+}
+.yk_banner ul:nth-child(1) li{
+    width: 10%;
+    float: left;
+}
+.yk_banner ul:nth-child(1) li a{
+    width: 100%;
+    display: block;
+}
+.yk_banner ul:nth-child(1) li a img{
+    width: 100%;
+    display: block;
+}
+.yk_banner div ul:nth-child(1){
+    position: absolute;
+    width: 240px;
+    left: 50%;
+    bottom: 5px;
+    margin-left: -59px;
+}
+.yk_banner div ul:nth-child(1) li{
+	background: #FFF;
+    float: left;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+.yk_banner div ul:nth-child(1) li.now{
+    background: #3B77DB;
+}
+.yk_banner div ul:nth-child(1) li:first-child{
+    margin-left: 0;
+}
+.yk_now{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 30px;
+	background: rgba(0,0,0,0.5);	
+}
+.yk_detail{
+	max-height: 900px;
+	background: #F3F3F3;
+	margin-top: 1.3rem;
+}
+.detail_logo{
+	font-size: 0.3rem;
+	float: left;
+	width: 25%;
+	text-align: center;
+	margin: 0.26rem 0;
+}
+.yk_detail .logo{
+	margin:0 0.5rem 0 0.5rem;
+	height: 100px;
+	width: 100px;
+	background: url(../img/yk_sprites.png) no-repeat 0 -100px;
+}
+
+.yk_detail div:nth-child(2) .logo{
+	background: url(../img/yk_sprites.png) no-repeat -98px -100px;
+}
+.yk_detail div:nth-child(3) .logo{
+	background: url(../img/yk_sprites.png) no-repeat -196px -100px;
+}
+.yk_detail div:nth-child(4) .logo{
+	background: url(../img/yk_sprites.png) no-repeat -294px -100px;
+}
+.detail_level{
+	display: inline-block;
+	width: 91%;
+	margin-left: 0.5rem;
+}
+.yk_detail .level{
+	display: inline-block;
+	margin: 0 0.08rem;
+	margin-bottom: 0.5rem;
+	height: 5.5rem;
+	width: 31%;
+	float: left;
+	font-size: 0.29rem;
+}
+.yk_detail .level img{
+	width: 100%;
+}
+
+.yk_detail .level span{
+	color: red;
+}
+
+
+@media screen and (max-width: 500px) {
+	.yk_detail .logo{
+		margin-left: 0;
+	}
+}
+@media screen and (max-width: 400px) {
+	.detail_logo{
+		width: 33%;
+	}
+	.yk_detail div:nth-child(4){
+		display: none;
+	}
+	.detail_level div:nth-child(4){
+		display: inline-block;
+	}
+
+}

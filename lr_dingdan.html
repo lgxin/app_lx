@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/lr_base.css"/>
+    <link rel="stylesheet" href="./css/lr_dingdan.css"/>
+    <script src="js/fixScreen750.js"></script>
+    <title>订单详情</title>
+</head>
+<body>
+<div id="lr">
+    <div class="lr">
+        <!--头部标题-->
+        <header class="lr_header">
+            <a class="lr_icon_back" href="yq_homePage.html"></a>
+            <div class="lr_header_title"><h3>全部订单(2)</h3></div>
+        </header>
+        <!--主体信息-->
+        <main>
+            <div class="lr_main"></div>
+            <div class="lr_more"></div>
+        </main>
+    </div>
+
+    <!--底部信息栏-->
+    <footer class="lr_menu">
+        <ul class="clearfix">
+            <li class="spel">
+                <span class="lr_icon_order"></span>
+
+                <p>订单</p>
+            </li>
+            <li>
+                <span class="lr_icon_coll"></span>
+
+                <p>收藏</p>
+            </li>
+            <li>
+                <span class="lr_icon_page"></span>
+
+                <p>首页</p>
+            </li>
+            <li><a href="lt_cate.html">
+                <span class="lr_icon_item"></span>
+
+                <p>分类</p>
+                </a>
+            </li>
+            <li>
+                <span class="lr_icon_mine"></span>
+
+                <p>我的</p>
+            </li>
+        </ul>
+    </footer>
+     <div class="lr_win">
+        <div class="lr_win_box bounceInDown">
+            <div class="text_box">您是否确认删除此订单？</div>
+            <div class="btn_box clearfix">
+                <a href="#" class="cancel">取消</a>
+                <a href="#" class="submit aaa">确定</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/template/template-native.js"></script>
+<script src="js/lr_dingdan.js">
+
+</script>
+<script type="text/template" id="tem">
+    <% for(var i =0;i < $data.length;i++) { %>
+    <div class="lr_box">
+                <div class="lr_box_top">
+                    <div class="lr_icon_car fl"></div>
+                    <div class="lr_top_deta fl">
+                        <p><%= $data[i].use%></p>
+                        <p><%= $data[i].state%></p>
+                    </div>
+                    <div class="lr_top_price fr"><%= $data[i].price%></div>
+                </div>
+                <div class="lr_box_main">
+                    <p><%= $data[i].name%></p>
+
+                    <p><%= $data[i].add%></p>
+
+                    <p><%= $data[i].useTime%></p>
+
+                    <div class="lr_box_main_delete">删除</div>
+                    <div class="lr_box_main_share">分享</div>
+                </div>
+            </div>
+            <% }%>
+</script>
+</body>
+</html>

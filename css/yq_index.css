@@ -1,0 +1,170 @@
+body {
+  background: url("../img/yq_bg_logo01.png") no-repeat;
+  background-size: 100%;
+}
+label {
+  display: block;
+  width: 5.786667rem;
+  height: 1.053333rem;
+  line-height: 1.053333rem;
+  margin-top: 0.2rem;
+  border: 1px solid #437BDA;
+  border-radius: 0.226667rem;
+  background: transparent;
+  position: relative;
+}
+/*所有使用精灵图的class */
+[class^="yq_icon1_"] {
+  background: url("../img/yq_bg_icon1.png") no-repeat;
+  background-size: 5.333333rem 5.333333rem ;
+  background-origin: content-box;
+  background-clip: content-box;
+}
+[class^="yq_icon2_"] {
+  background: url(../img/yq_bg_icon2.png) no-repeat;
+  background-size: 4rem 4.0rem;
+  background-origin: content-box;
+  background-clip: content-box;
+}
+.section {
+  height: 100%;
+  position: relative;
+}
+.section .register {
+  width: 10rem;
+  height: 13.34rem;
+  position: relative;
+  overflow: hidden;
+}
+.section .register form {
+  width: 100%;
+  position: absolute;
+  top: 8.8rem;
+  padding: 0 21%;
+}
+.section .register form input {
+  background: transparent;
+  font-size: 0.4rem;
+  margin-left: 1.0rem ;
+}
+.section .register form span {
+  position: absolute;
+  width: 0.666667rem;
+  height: 0.666667rem;
+  top: 0.133333rem;
+  left: 0.16rem;
+}
+.section .register form .yq_icon1_name {
+  background-size: 2.666667rem 2.666667rem ;
+  padding: 0.04rem 0.106667rem;
+  background-position: -0.453333rem -0.986667rem;
+}
+.section .register form .yq_icon1_pass {
+  background-size: 2.666667rem 2.666667rem ;
+  padding: 0.04rem 0.146667rem;
+  background-position: -0.013333rem -0.986667rem;
+}
+.section .register form #login {
+  width: 5.786667rem;
+  height: 1.053333rem;
+  margin-left: 0;
+  margin-top: 0.2rem;
+  border: 1px solid #333;
+  border-radius: 0.226667rem;
+  font-size: 0.44rem;
+  font-weight: bold;
+  background: #508EF3;
+  color: #fff;
+}
+.section .register form p {
+  position: relative;
+  height: 45px;
+}
+.section .register form p a {
+  margin-top: 0.2rem;
+  color: #999798;
+  font-size: 0.306667rem;
+  position: absolute;
+}
+.section .register form p a:last-child {
+  botton: 0;
+  right: 0;
+}
+.section .external {
+  height: 4.446667rem;
+  padding: 0 21%;
+}
+.section .external .external_box {
+  width: 100%;
+  border-top: 1px solid #4DBAFD;
+  position: relative;
+}
+.section .external .external_box h3 {
+  width: 2.866667rem;
+  height: 0.346667rem;
+  background: #FFD;
+  position: absolute;
+  left: 1.466667rem;
+  top: -0.173333rem;
+  text-align: center;
+  color: #969696;
+  font-weight: normal;
+  font-size: 0.346667rem;
+}
+.section .external .external_box .icon_ext {
+  margin-top: 0.386667rem;
+  width: 100%;
+  height: 0.813333rem;
+  padding: 0 5%;
+}
+.section .external .external_box .icon_ext a {
+  float: left;
+  width: 0.813333rem;
+  height: 0.813333rem;
+  margin: 0 4.7%;
+}
+.section .external .external_box .icon_ext .ext_icon1 {
+  background: url('../img/yq_ext_icon1.gif') no-repeat;
+  background-size: 100%;
+}
+.section .external .external_box .icon_ext .ext_icon2 {
+  background: url('../img/yq_ext_icon2.gif') no-repeat;
+  background-size: 100%;
+}
+.section .external .external_box .icon_ext .ext_icon3 {
+  background: url('../img/yq_ext_icon3.gif') no-repeat;
+  background-size: 100%;
+}
+.section .external .external_box .icon_ext .ext_icon4 {
+  background: url('../img/yq_ext_icon4.gif') no-repeat;
+  background-size: 100%;
+}
+/*弹出框*/
+.yq_win {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+  display: none;
+}
+.yq_win .yq_win_box {
+  width: 80%;
+  background: #fff;
+  border-radius: 4px;
+  margin: 0 auto;
+  margin-top: 2.666667rem;
+  padding: 0 0.133333rem;
+}
+.yq_win .yq_win_box .yq_text_box {
+  text-align: center;
+  font-size: 0.24rem;
+  line-height: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+.yq_win .yq_win_box.bounceInDown {
+  animation: bounceInDown 1s;
+  -webkit-animation: bounceInDown 1s;
+}

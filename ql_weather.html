@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>weather</title>
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/ql_common.css">
+    <link rel="stylesheet" href="css/ql_weather.css">
+    <script src='js/fixScreen750.js'></script>
+</head>
+<body>
+<div class="weather">
+    <div class="header weather_topbar clearfix">
+        <a href="lt_cate.html" class="fa fa-angle-left f_left"></a>
+        天气查询
+    </div>
+    <div class="weather_main">
+        <div class="weather_maint">
+        </div>
+    </div>
+    <ul class="weather_mainm">
+        <li class="wpoint_part col-xs-4">
+            <i class="fa fa-thermometer"></i> 4kph
+        </li>
+        <li class="wpoint_part col-xs-4">
+            <i class="fa fa-sun-o"></i> 指数良好
+        </li>
+        <li class="wpoint_part col-xs-4">
+            <i class="fa fa-tint"></i> 35%
+        </li>
+    </ul>
+    <div class="weather_mainb clearfix">
+    </div>
+    <div class="bottom weather_bottom">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+</div>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/template/template-native.js"></script>
+<script>
+    $.ajax({
+        type: "POST",
+        url: "http://api.yytianqi.com/forecast7d?city=CH020100&key=lws46vk1ifhh41tp",
+        data: "city=CH020100&key=lws46vk1ifhh41tp",
+        dataType: "json",
+        success: function(msg){
+            console.log(msg);
+            var result=msg.data.list;
+            var city=msg.data.cityName;
+            var subDate=result[0].date;
+            var data={
+                items: result,
+                city: city,
+                subDate: subDate
+            };
+            var html1= template('tpl1',data);
+            var html2= template("tpl2",data);
+            $(".weather_maint").html(html1);
+            $(".weather_mainb").html(html2);
+        }
+    });
+</script>
+<script type="text/template" id="tpl1">
+    <div class="weather_rel f_left clearfix">
+        <div class="weather_pic f_left"></div>
+        <div class="weather_addr f_left">
+            <p><%= city %></p>
+            <p><%= subDate %>&nbsp;星期日</p>
+        </div>
+    </div>
+    <div class="weather_deg"><%= items[1].qw1 %>°</div>
+</script>
+<script type="text/template" id="tpl2">
+    <div class="tem_part col-xs-3">
+        <div class="tem_part_t col-xs-12"><%= items[1].date.substr(-2,2) %>日</div>
+        <% if(items[1].tq1.indexOf("晴")!=-1){ %>
+        <div class="tem_part_m col-xs-12 sunny"></div>
+        <% }else if(items[1].tq1.indexOf("云")!=-1||items[1].tq1.indexOf("阴")!=-1){ %>
+        <div class="tem_part_m col-xs-12 cloudy"></div>
+        <% }else if(items[1].tq1.indexOf("雨")!=-1||items[1].tq1.indexOf("小雨")!=-1){ %>
+        <div class="tem_part_m col-xs-12 rainy"></div>
+        <% }else if(items[1].tq1.indexOf("雪")!=-1){ %>
+        <div class="tem_part_m col-xs-12 snowy"></div>
+        <% }else if(items[1].tq1.indexOf("大雨")!=-1||items[1].tq1.indexOf("闪电")!=-1){ %>
+        <div class="tem_part_m col-xs-12 stormy"></div>
+        <% } %>
+        <div class="tem_part_b col-xs-12"><%= items[1].qw1 %>°</div>
+    </div>
+    <div class="tem_part col-xs-3">
+        <div class="tem_part_t col-xs-12"><%= items[2].date.substr(-2,2) %>日</div>
+        <% if(items[2].tq1.indexOf("晴")!=-1){ %>
+        <div class="tem_part_m col-xs-12 sunny"></div>
+        <% }else if(items[2].tq1.indexOf("云")!=-1||items[2].tq1.indexOf("阴")!=-1){ %>
+        <div class="tem_part_m col-xs-12 cloudy"></div>
+        <% }else if(items[2].tq1.indexOf("雨")!=-1||items[2].tq1.indexOf("小雨")!=-1){ %>
+        <div class="tem_part_m col-xs-12 rainy"></div>
+        <% }else if(items[2].tq1.indexOf("雪")!=-1){ %>
+        <div class="tem_part_m col-xs-12 snowy"></div>
+        <% }else if(items[2].tq1.indexOf("大雨")!=-1||items[2].tq1.indexOf("闪电")!=-1){ %>
+        <div class="tem_part_m col-xs-12 stormy"></div>
+        <% } %>
+        <div class="tem_part_b col-xs-12"><%= items[2].qw1 %>°</div>
+    </div>
+    <div class="tem_part col-xs-3">
+        <div class="tem_part_t col-xs-12"><%= items[3].date.substr(-2,2) %>日</div>
+        <% if(items[3].tq1.indexOf("晴")!=-1){ %>
+        <div class="tem_part_m col-xs-12 sunny"></div>
+        <% }else if(items[3].tq1.indexOf("云")!=-1||items[3].tq1.indexOf("阴")!=-1){ %>
+        <div class="tem_part_m col-xs-12 cloudy"></div>
+        <% }else if(items[3].tq1.indexOf("雨")!=-1||items[3].tq1.indexOf("小雨")!=-1){ %>
+        <div class="tem_part_m col-xs-12 rainy"></div>
+        <% }else if(items[3].tq1.indexOf("雪")!=-1){ %>
+        <div class="tem_part_m col-xs-12 snowy"></div>
+        <% }else if(items[3].tq1.indexOf("大雨")!=-1||items[3].tq1.indexOf("闪电")!=-1){ %>
+        <div class="tem_part_m col-xs-12 stormy"></div>
+        <% } %>
+        <div class="tem_part_b col-xs-12"><%= items[3].qw1 %>°</div>
+    </div>
+    <div class="tem_part col-xs-3">
+        <div class="tem_part_t col-xs-12"><%= items[4].date.substr(-2,2) %>日</div>
+        <% if(items[4].tq1.indexOf("晴")!=-1){ %>
+        <div class="tem_part_m col-xs-12 sunny"></div>
+        <% }else if(items[4].tq1.indexOf("云")!=-1||items[4].tq1.indexOf("阴")!=-1){ %>
+        <div class="tem_part_m col-xs-12 cloudy"></div>
+        <% }else if(items[4].tq1.indexOf("雨")!=-1||items[4].tq1.indexOf("小雨")!=-1){ %>
+        <div class="tem_part_m col-xs-12 rainy"></div>
+        <% }else if(items[4].tq1.indexOf("雪")!=-1){ %>
+        <div class="tem_part_m col-xs-12 snowy"></div>
+        <% }else if(items[4].tq1.indexOf("大雨")!=-1||items[4].tq1.indexOf("闪电")!=-1){ %>
+        <div class="tem_part_m col-xs-12 stormy"></div>
+        <% } %>
+        <div class="tem_part_b col-xs-12"><%= items[4].qw1 %>°</div>
+    </div>
+</script>
+</body>
+</html>

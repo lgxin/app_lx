@@ -1,0 +1,228 @@
+/*所有使用精灵图的class */
+[class^="yq_icon1_"] {
+  background: url("../img/yq_bg_icon1.png") no-repeat;
+  background-size: 5.333333rem 5.333333rem ;
+  background-origin: content-box;
+  background-clip: content-box;
+}
+[class^="yq_icon2_"] {
+  background: url(../img/yq_bg_icon2.png) no-repeat;
+  background-size: 4rem 4.0rem;
+  background-origin: content-box;
+  background-clip: content-box;
+}
+.header {
+  width: 10rem;
+  height: 11.106667rem;
+  background: url("../img/wuhan.png") no-repeat;
+  background-size: 100%;
+  overflow: hidden;
+}
+.header .search {
+  margin-top: 0.28rem;
+  position: relative;
+  padding: 0 10%;
+}
+.header .search form {
+  position: relative;
+}
+.header .search form input {
+  width: 82%;
+  height: 1.226667rem;
+  border-radius: 0.16rem;
+  font-size: 0.6rem;
+  background: #FFF;
+  padding-left: 0.733333rem;
+}
+.header .search form .yq_icon1_search {
+  height: 1.226667rem;
+  width: 0.733333rem;
+  padding: 0.24rem 0.066667rem;
+  position: absolute;
+}
+.header .search .scan {
+  width: 1.226667rem;
+  height: 1.226667rem;
+  margin-left: 0.36rem;
+  position: absolute;
+  top: 0;
+  right: 0.693333rem;
+  background: #fff;
+  border-radius: 0.16rem;
+  padding: 0.30rem;
+}
+.header .search .scan .yq_icon1_scan {
+  display: block;
+  width: 0.72rem;
+  height: 0.613333rem;
+  background-position: -1.08rem 0;
+}
+.serve {
+  width: 10rem;
+  height: 6.573333rem;
+  margin-top: -1.733333rem;
+  overflow: hidden;
+  background: #E8E8E8;
+}
+.serve .serve_box {
+  width: 9.2rem;
+  height: 5.48rem;
+  margin: 0.293333rem auto;
+  background: #F3F3F3;
+  padding: 0.426667rem 0;
+}
+.serve .serve_box ul li {
+  width: 2.293333rem;
+  height: 2.226667rem;
+  float: left;
+  border-right: 1px solid #DDD;
+  text-align: center;
+  font-size: 0.4rem;
+  position: relative;
+}
+.serve .serve_box ul li a {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #5780C4;
+}
+.serve .serve_box ul li a b {
+  position: absolute;
+  bottom: 0.4rem;
+  left: 34%;
+  font-weight: normal;
+}
+.serve .serve_box ul li a span {
+  position: absolute;
+  left: 50%;
+  top: 0.333333rem;
+  margin-left: -0.6rem;
+  width: 1.266667rem;
+  height: 1.0rem;
+}
+.serve .serve_box ul li a .yq_icon2_landscape {
+  padding: 0.213333rem 0.2rem;
+}
+.serve .serve_box ul li a .yq_icon2_path {
+  padding: 0.16rem 0.28rem ;
+  background-position: -0.866667rem 0;
+}
+.serve .serve_box ul li a .yq_icon2_periphery {
+  padding: 0.16rem 0.373333rem ;
+  background-position: -1.586667rem 0;
+}
+.serve .serve_box ul li a .yq_icon2_weather {
+  padding: 0.213333rem 0.226667rem ;
+  background-position: -2.16rem 0;
+}
+.serve .serve_box ul li a .yq_icon2_cate {
+  padding: 0.16rem 0.4rem;
+  background-position: -0.986667rem -0.813333rem;
+}
+.serve .serve_box ul li a .yq_icon2_recreation {
+  padding: 0.2rem 0.333333rem;
+  background-position: -2.986667rem 0;
+}
+.serve .serve_box ul li a .yq_icon2_shop {
+  padding: 0.193333rem 0.16rem;
+  background-position: -2.32rem -0.76rem;
+}
+.serve .serve_box ul li a .yq_icon2_community {
+  padding: 0.16rem 0.293333rem;
+  background-position: -1.586667rem -0.72rem;
+}
+.serve .serve_box li:nth-child(n+5) {
+  border-top: 1px solid #DDD;
+}
+.serve .serve_box li:nth-child(4n) {
+  border-right: none;
+}
+.floor {
+  width: 10rem;
+  height: 1.306667rem;
+  position: relative;
+  padding: 0 0.4rem;
+}
+.floor .home_cox {
+  width: 1.626667rem;
+  height: 1.8rem;
+  border-radius: 0.8rem 0.8rem 0 0 ;
+  border: 1px solid #EAECEB;
+  position: absolute;
+  top: -0.6rem;
+  left: 41%;
+  background: #FFF;
+  border-bottom: none;
+  margin: 0 0.093333rem;
+}
+.floor .home_cox .home_page {
+  position: absolute;
+  width: 1.52rem;
+  height: 1.52rem;
+  border-radius: 0.76rem;
+  border: 1px solid #FF3A43;
+  top: 0.04rem;
+  left: 0.026667rem;
+}
+.floor .home_cox .home_page .yq_icon2_home {
+  position: absolute;
+  width: 1.52rem;
+  height: 1.52rem;
+  background-position: -3.28rem -0.72rem;
+  padding: 0.446667rem 0.433333rem;
+}
+.floor ul li {
+  width: 1.826667rem;
+  height: 1.306667rem;
+  position: relative;
+}
+.floor ul li a {
+  position: absolute;
+  left: 0;
+  width: 1.826667rem;
+  height: 1.306667rem;
+  font-size: 0.24rem;
+}
+.floor ul li a b {
+  position: absolute;
+  bottom: 0.2rem;
+  left: 35%;
+  font-weight: normal;
+}
+.floor ul li a span {
+  position: absolute;
+  width: 0.666667rem;
+  height: 0.666667rem;
+  top: 0.133333rem;
+  left: 50%;
+  margin-left: -0.333333rem;
+  background-size: 2.666667rem 2.666667rem;
+}
+.floor ul li a .yq_icon1_order {
+  padding: 0.04rem 0.12rem;
+  background-position: -0.013333rem -0.4rem;
+}
+.floor ul li a .yq_icon1_collect {
+  padding: 0.093333rem 0.066667rem;
+  background-position: -0.426667rem -0.413333rem;
+}
+.floor ul li a .yq_icon1_label {
+  padding: 0.04rem;
+  background-position: -1rem -0.32rem;
+}
+.floor ul li a .yq_icon1_my {
+  padding: 0.04rem;
+  background-position: -1.573333rem -0.306667rem;
+}
+.floor li:nth-child(1),
+.floor li:nth-child(2) {
+  float: left;
+}
+.floor li:nth-child(3),
+.floor li:nth-child(4) {
+  float: right;
+}
+[class=color-red] {
+  color: #FF3A41;
+}

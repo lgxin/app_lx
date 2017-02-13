@@ -1,0 +1,161 @@
+html{
+	font-size: 1rem;
+}
+/* 头部 */
+.header {
+	height: 1.173333rem;
+	width: 100%;
+	background: #4DB9FF;
+	text-align: center;
+	position: relative;
+}
+.header_icon {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 89px;
+	height: 88px;
+	background: url(../img/back_icon.gif) no-repeat;
+}
+.header_name {
+	display: inline-block;
+	font-size: 34px;
+	color: white;
+	height: 88px;
+	width: 100%;
+	line-height: 88px;	
+}
+.contenIcon li {
+	float: left;
+	width: 50%;
+	height: 50%;
+	/* background: pink; */
+}
+.contenIcon li a {
+	display: block;
+	width: 375px;
+	height: 295px;	
+	position: relative;
+}
+a span {
+	width: 100%;
+	margin: 0 auto;
+	position: absolute;
+    top: 20%;
+    left: 25%;
+}
+a p {
+	position: absolute;
+    top: 70%;
+    left: 30%;
+    font-size: 30px;
+}
+.contenIcon li:nth-child(1) a {
+	width: 100%;
+	background: #C6DFFF;	
+}
+.contenIcon li:nth-child(1) a span {
+	width: 149px;
+	height: 106px;
+	background: url(../img/lt_sprt.png) no-repeat -18px -6px;
+}
+
+.contenIcon li:nth-child(2) a {
+	width: 100%;
+	background: #5897F3;
+}
+.contenIcon li:nth-child(2) a span {
+	width: 108px;
+	height: 119px;
+	background: url(../img/lt_sprt.png) no-repeat -174px 0;
+    top: 20%;
+    left: 32%;
+}
+
+.contenIcon li:nth-child(3) a {
+	width: 100%;
+	background: #9FC5F9;
+}
+.contenIcon li:nth-child(3) a span {
+	width: 94px;
+	height: 122px;
+	background: url(../img/lt_sprt.png) no-repeat -4px -119px;
+    top: 20%;
+    left: 33%;
+}
+
+.contenIcon li:nth-child(4) a {
+	width: 100%;
+	background: #C6DFFF;
+}
+.contenIcon li:nth-child(4) a span {
+	width: 137px;
+	height: 83px;
+	background: url(../img/lt_sprt.png) no-repeat -282px -33px;
+    top: 35%;
+    left: 25%;
+}
+
+.contenIcon li:nth-child(5) a {
+	width: 100%;
+	background: #79ADF9;
+}
+.contenIcon li:nth-child(5) a span {
+	width: 67px;
+	height: 103px;
+	background: url(../img/lt_sprt.png) no-repeat -423px -8px;
+    top: 25%;
+    left: 35%;
+}
+ul li:nth-child(5) p {
+	left: 35%;
+}
+ul li:nth-child(6) p {
+	left: 35%;
+}
+ul li:nth-child(7) p {
+	left: 35%;
+}
+.contenIcon li:nth-child(6) a {
+	width: 100%;
+	background: #9FC5F9;
+}
+.contenIcon li:nth-child(6) a span {
+	width: 82px;
+	height: 85px;
+	background: url(../img/lt_sprt.png) no-repeat -108px -140px;
+    top: 30%;
+    left: 34%;;
+
+}
+
+.contenIcon li:nth-child(7) a {
+	width: 100%;
+	background: #5897F3;
+}
+.contenIcon li:nth-child(7) a span {
+	width: 121px;
+	height: 82px;
+	background: url(../img/lt_sprt.png) no-repeat -197px -140px;
+    top: 30%;
+    left: 22%;
+}
+
+.contenIcon li:nth-child(8) a {
+	width: 100%;
+	background:#79ADF9;
+}
+.contenIcon li:nth-child(8) a span {
+	width: 87px;
+	height: 87px;
+	background: url(../img/lt_sprt.png) no-repeat -342px -140px;
+    top: 30%;
+    left: 35%;
+}
+/* 选中的样式 */
+.contenIcon ul li .active {
+	background: red;
+	color: white;
+}
+
+

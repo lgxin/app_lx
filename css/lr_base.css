@@ -1,0 +1,92 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  /*���ƶ�������������*/
+  /*������������Ч��*/
+  -webkit-tap-highlight-color: transparent;
+  /*�������еĺ��ӵĿ����Ա߿���ʼ����*/
+  -webkit-box-sizing: border-box;
+  /*Ҫ���� webkit �������ں˳��� ��������һ�����ϵ��ƶ���������*/
+  box-sizing: border-box;
+}
+body {
+  font-size: 0.18666667rem;
+  /*background-color: #E8E8E8;*/
+  color: #333;
+  font-family: "宋体", "sans-serif";
+  /*���豸Ĭ�ϵ�����*/
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+a:hover {
+  color: #333;
+}
+input,
+textarea {
+  border: none;
+  outline: none;
+  resize: none;
+  /*���������Զ���  ������������input�Դ�����ʽ*/
+  -webkit-appearance: none;
+  /*����Ĭ�ϵ���ʽ��*/
+}
+/*common css  Ҳ�������ǹ��õ�css*/
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clearfix::after,
+.clearfix::before {
+  content: ".";
+  line-height: 0;
+  height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+.m_r10 {
+  margin-right: 0.13333333rem;
+}
+.m_l10 {
+  margin-left: 0.13333333rem;
+}
+.m_t10 {
+  margin-top: 0.13333333rem;
+}
+.m_b10 {
+  margin-bottom: 0.13333333rem;
+}
+.mianColor {
+  color: #d8505c;
+}
+/*����ʹ�þ���ͼ�� class  ��icon_��ʼ������class������Щ����*/
+[class^="lr_icon_"] {
+  background: url("../img/lr_sprites.png") no-repeat;
+  /*ѹ������ͼ*/
+  background-size: 5.33333333rem 5.33333333rem;
+}
+.lr {
+  width: 10rem;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #e8e8e8;
+}
+.lr_header {
+  width: 10rem;
+  height: 1.2rem;
+  background-color: #4DBAFF;
+  padding: 0 0.4rem;
+  margin: 0 auto;
+  position: relative;
+}
+

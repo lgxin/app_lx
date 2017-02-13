@@ -1,0 +1,63 @@
+body {
+  max-width: 10rem;
+}
+.lz_body {
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+}
+.lz_body .lz_header {
+  height: 0.98666667rem;
+  line-height: 0.98666667rem;
+  font-size: 0.45333333rem;
+  background-color: #4DB9FF;
+  color: #ffffff;
+  padding: 0 0.24rem;
+  text-align: center;
+}
+.lz_body .lz_header a {
+  font-weight: bold;
+  font-size: 0.53333333rem;
+  color: #fff;
+}
+.lz_body .lz_row {
+  height: 0.90666667rem;
+  display: flex;
+  justify-content: space-between;
+  line-height: 0.90666667rem;
+  font-size: 0.4rem;
+  padding: 0 0.37333333rem;
+  margin-bottom: 0.01333333rem;
+  /*js要用*/
+}
+.lz_body .lz_row span {
+  width: 1.65333333rem;
+  text-align: center;
+}
+.lz_body .lz_row span.now {
+  color: #3B77DB;
+  border-bottom: 0.06666667rem solid #3B77DB;
+}
+.lz_body ul {
+  margin: 0 auto;
+  width: 0.69333333rem;
+}
+.lz_body ul li {
+  display: block;
+  margin: 0 auto;
+  width: 0.69333333rem;
+  height: 0.05333333rem;
+  margin: 0.05333333rem;
+  border-radius: 0.05333333rem;
+  background-color: #A5A5A5;
+}
+[class^="icon_"] {
+  background: url("../img/icon.png");
+  background-size: 8rem 5.86666667rem;
+}
+.show {
+  display: block;
+}
+.hidden {
+  display: none;
+}

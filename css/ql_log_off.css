@@ -1,0 +1,97 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.log_off {
+  background: url("../img/ql_log_off.jpg") no-repeat;
+  opacity: 0.8;
+  height: 100%;
+  background-size: 100% 100%;
+}
+#myModal .modal-content {
+  width: 8rem;
+  height: 4.66666667rem;
+  margin: 2.53333333rem auto;
+  text-align: center;
+  font-size: 0.42666667rem;
+  color: #fff;
+  background: rgba(59, 64, 83, 0.3);
+}
+#myModal .modal-content .modal-header,
+#myModal .modal-content .modal-footer {
+  border: none;
+}
+.close {
+  color: #fff;
+}
+:focus {
+  outline: none;
+}
+#close_now,
+#close_later {
+  background: #354e63;
+  color: #fff;
+  width: 2.4rem;
+}
+.modal-footer {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.4rem;
+}
+.log_off_header {
+  height: 1.2rem;
+  line-height: 1.2rem;
+  background: #4dbaff;
+  text-align: center;
+  font-size: 0.45rem;
+  color: #fff;
+}
+.log_off_header a.btn {
+  color: #fff;
+  font-size: 0.42666667rem;
+}
+.log_off_header i {
+  position: absolute;
+  top: 0.33333333rem;
+  left: 0.4rem;
+}
+.log_off_header a:nth-of-type(1) {
+  color: #fff;
+}
+.log_off .line {
+  height: 0.56rem;
+  line-height: 0.56rem;
+  color: #fff;
+  font-size: 0.42666667rem;
+  width: 100%;
+  text-align: center;
+}
+.log_off .line1 {
+  margin-top: 7.33333333rem;
+  background-image: -webkit-radial-gradient(center center, rgba(139, 135, 133, 0.8), rgba(139, 135, 133, 0));
+}
+.log_off_point {
+  margin: 0.93333333rem 0;
+  color: #fff;
+  font-size: 0.42666667rem;
+  text-align: center;
+}
+.log_off .line2 {
+  background-image: -webkit-radial-gradient(center center, rgba(78, 73, 85, 0.8), rgba(78, 73, 85, 0) 80%);
+}
+.log_off .tem_part {
+  color: #fff;
+  font-size: 0.42666667rem;
+  text-align: center;
+}
+.log_off .log_off_tem {
+  margin-top: 0.93333333rem;
+  margin-bottom: 1.6rem;
+}
+.log_off .tem_part_m {
+  margin: 0.26666667rem 0;
+}
+.log_off_bottom {
+  margin-top: 2rem;
+}

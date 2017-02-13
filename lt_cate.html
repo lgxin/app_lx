@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="js/fixScreen750.js"></script>
+	<title>分类</title>
+	<link rel="stylesheet" href="css/lt_base.css">
+	<link rel="stylesheet" href="css/lt_cate.css">
+
+</head>
+<body>
+	<!-- 页面头部与图标  -->
+	<div class="header">
+		<a href="index.html" class="header_icon"></a>
+		<span class="header_name">分类</span>
+
+	</div>
+	<div class="contenIcon">
+		<ul>
+			<li><a href="gc_scenery.html">
+				<span></span>
+				<p>景点介绍</p>
+			</a>
+
+			</li>
+			<li><a href="lr_line.html">
+				<span></span>
+				<p>路线查询</p>
+			</a>
+
+			</li>
+			<li><a href="zbyd.html">
+				<span ></span>
+				<p>周边服务</p>
+			</a>
+
+			</li>
+			<li><a href="ql_weather.html">
+				<span ></span>
+				<p>天气查询</p>
+			</a>
+
+			</li>
+			<li><a href="#">
+				<span></span>
+				<p>美食</p>
+			</a>
+
+			</li>
+			<li><a href="gc_index.html">
+				<span></span>
+				<p>娱乐</p>
+			</a>
+
+			</li>
+			<li><a href="yk_index.html">
+				<span></span>
+				<p>购物</p>
+			</a>
+
+			</li>
+			<li><a href="lt_comm.html">
+				<span></span>
+				<p>社区分享</p>
+			</a>
+
+			</li>
+		</ul>
+	</div>
+	<!-- 底部 -->
+	<div class="foot">
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+	<script>
+			//要做事，先找人
+			var contenIcon = document.querySelector('.contenIcon');
+			var ul = contenIcon.children[0];
+			// console.log(ul);
+			var header_lis = ul.children;
+			for(var i=0; i<header_lis.length;i++ ){
+				header_lis[i].onclick = function(){
+
+					for (var j=0; j< header_lis.length; j++) {
+						header_lis[j].children[0].className = "";
+					}
+					this.children[0].className = "active";
+					console.log(this.children[0]);
+				}
+			}
+	</script>
+</body>
+</html>

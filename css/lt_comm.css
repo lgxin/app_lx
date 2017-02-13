@@ -1,0 +1,480 @@
+html{
+  font-size: 1rem;
+  background: #FBFBFB;
+}
+body {
+  /*background: #F1F1F1;*/
+  background: #FBFBFB;
+}
+/* 头部 */
+.header {
+  height: 88px;
+  width: 10rem;
+  background: #4DB9FF;
+  text-align: center;
+  position: relative;
+}
+.header_icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 89px;
+  height: 88px;
+  background: url(../img/back_icon.gif) no-repeat;
+}
+.header_name {
+  display: inline-block;
+  font-size: 0.453333rem;
+  color: white;
+  height: 88px;
+  width: 100%;
+  line-height: 88px;
+}
+.header {
+  position: relative;
+}
+.header_right {
+  position: absolute;
+  top: 30%;
+  left: 77%;
+  width: 105px;
+  height: 0.533333rem;
+
+}
+.post {
+  float: left;
+  width: 0.986667rem;
+  height: 0.533333rem;
+  background: #F1BDBF;
+  text-align: center;
+  line-height: 0.573333rem;
+  border-radius: 0.066667rem;
+  font-size: 0.333333rem;
+  font-family: "华文细黑";
+  color: white;
+}
+.more {
+  float: right;
+  width: 28px;
+  height: 32px;
+  background: url(../img/more.gif) no-repeat;
+
+  margin-right: -10px;
+}
+/* 导航栏 */
+.nav {
+  width: 10rem;
+  height: 1.013333rem;
+  border-bottom: 3px solid #CBCBCB;
+}
+.nav ul {
+  width: 551px;
+  /* margin: 0 105px; */
+  height: 7.346667rem;
+  margin: 0 auto;
+}
+.nav li {
+  float: left;
+  font-size: 0.453333rem;
+  font-family: "华文细黑";
+  width: 16.152%;
+  height: 0.946667rem;
+  text-align: center;
+  line-height: 0.946667rem;
+  /* border-bottom: 4px solid #3B77DB; */
+}
+.active {
+  color: blue;
+  border-bottom:4px solid #3B77DB;
+}
+.nav li:nth-child(2){
+  margin-left:12.885%;
+}
+.nav li:nth-child(3){
+  margin-left:10.889%;
+}
+.nav li:nth-child(4){
+  margin-left:11.07%;
+}
+/* 内容中心 */
+.member {
+  width: 100%;
+  height: 1.333333rem;
+  margin-left: 0.466667rem;
+}
+.member_icon {
+  float: left;
+  margin-top: 0.573333rem;
+  border-radius: 0.066667rem;
+}
+.member_cen {
+  float: left;
+
+  margin-top: 0.666667rem;
+}
+.member_cen_icon {
+  float: left;
+  margin-left: 0.68rem;
+}
+.member_cen_cen {
+  display: inline-block;
+  float: left;
+  color: blue;
+  font-size: 0.373333rem;
+  font-family: "华文细黑";
+  margin-top: 0.133333rem;
+  margin-left: 0.16rem;
+}
+.member_right{
+  display: inline-block;
+  float: left;
+  font-size: 0.346667rem;
+  font-family: "华文细黑";
+  color: blue;
+  margin-top: 0.773333rem;
+  text-decoration: underline;
+
+}
+.member_box {
+  display: inline-block;
+  float: left;
+  width: 15%;
+  height: 1.333333rem;
+}
+.stick2,
+.stick1 {
+  float: left;
+  width: 100%;
+  height: 0.8rem;
+  margin-left: 0.466667rem;
+  margin-top:0.4rem;
+}
+.stick2_left,
+.stick1_left {
+  float: left;
+  width: 0.986667rem;
+  height: 0.533333rem;
+  background: #F1BDBF;
+  text-align: center;
+  line-height: 0.533333rem;
+  border-radius: 0.066667rem;
+  font-size: 0.333333rem;
+  font-family: "华文细黑";
+}
+.stick2_cent,
+.stick1_cent {
+  display: inline-block;
+  float:left;
+  font-size: 0.346667rem;
+  font-family: "华文细黑";
+  width: 5.946667rem;
+  height: 0.813333rem;
+  margin-left:0.186667rem;
+}
+.stick2_right,
+.stick1_right {
+  display: inline-block;
+  float: left;
+  font-size: 0.346667rem;
+  font-family: "华文细黑";
+  text-decoration: underline;
+}
+.stick1_box {
+  display: inline-block;
+  float: left;
+  width: 6%;
+  height: 0.333333rem;
+}
+.preson1_pic_left {
+  margin-left:0.4rem;
+  float:left;
+}
+.preson1_pic_top {
+  float:left;
+  font-size: 0.346667rem;
+  font-family: "华文细黑";
+  margin-left:0.293333rem;
+  position:relative;
+  color:#666666;
+}
+.preson1_pic_icon {
+  position:absolute;
+  top: -0.106667rem;
+  left: 120px;
+}
+.preson1_pic_bot {
+  /*float:left;*/
+  font-size: 0.293333rem;
+  font-family: "华文细黑";
+  margin-left: 2.293333rem;
+  margin-top: 0.4rem;
+  color:#9C9C9C;
+}
+.preson1_bot {
+  float:left;
+  margin-left:0.4rem;
+  margin-top:20px;
+  color:#666666;
+  font-size: 0.293333rem;
+}
+.preson1_bot_stick2_right {
+  float:right;
+  margin-right:23px;
+  font-size: 0.346667rem;
+  font-family: "华文细黑";
+  text-decoration: underline;
+  color:#9C9C9C;
+}
+/*查看更多*/
+.look_more {
+  width: 100%;
+  margin-top: 0.626667rem;
+
+}
+.look_more_con {
+
+  width: 9.186667rem;
+  height: 0.613333rem;
+  text-align: center;
+  line-height:0.613333rem;
+  background: #CECECE;
+  margin:0 auto;
+  font-size: 22px;
+  font-family: "微软雅黑";
+  color:#999999;
+}
+/*底部*/
+.foot {
+  float: left;
+  width: 100%;
+  background: #F4F4F4;
+}
+.foot ul {
+  width: 52px;
+  height: 25px;
+  margin: 0 auto;
+  margin-top:3px;
+}
+.foot li {
+  width: 50px;
+  height: 5px;
+  border-bottom: 2px solid #A6A6A6;
+}
+/*内容中心2*/
+.content1_member {
+  font-size: 0.346667rem;
+  margin-left:0.4rem;
+  font-weight: bold;
+}
+.people1 {
+  margin-top:0.24rem;
+}
+.people1 .preson1_pic {
+  margin-bottom: 10px;
+}
+.carousel2,
+.carousel {
+  width: 617px;
+  height: 238px;
+  position:relative;
+  overflow: hidden;
+  margin-left: 14px;
+}
+.carousel_pic li{
+  float:left;
+  margin-right:0.2rem;
+
+}
+.carousel_pic_b li{
+  float:left;
+  margin-right:0.2rem;
+
+}
+.carousel_pic_b,
+.carousel_pic {
+  float:left;
+  width: 1565px;
+  height: 230px;
+
+}
+.prev2,
+.prev {
+  position:absolute;
+  top: 0;
+  left: 0;
+  opacity:0.5;
+}
+.next2,
+.next {
+  position:absolute;
+  top: 0;
+  right: 8px;
+  opacity:0.5;
+}
+.people2 {
+  margin-top:0.253333rem;
+}
+.look_more2 {
+  width: 100%;
+  height: 40px;
+}
+.foot{
+  background: #F4F4F4;
+}
+.content_hidd {
+  display: none;
+}
+/*输入框*/
+.entry {
+  /* margin-left:0.4rem; */
+}
+.entry_icon {
+  float:left;
+}
+.entry_inpu {
+  float:left;
+  width: 8.123rem;
+  height: 0.68rem;
+  border:1px solid #666666;
+  border-radius: 8px;
+  margin-left:0.093333rem;
+  margin-top:0.186667rem;
+}
+.input-group {
+  float:left;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+
+
+}
+.entry .input-group .form-control {
+    float: left;
+    width: 478px;
+    /* height: 0.68rem; */
+    border-right: none;
+    /* margin-left: -11%; */
+    height: 90px;
+}
+.entry .input-group .input-group-addon {
+    float: left;
+    width: 108px;
+    height: 90px;
+    background: #fff;
+    line-height: 90px;
+    padding: 0;
+    border: 1px solid #ccc;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.content3 {
+  background: #FBFBFB;
+  position:relative;
+  display: block;
+
+}
+.content3_pic img {
+  margin: 25% 21%;
+}
+/*按钮*/
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #999;
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: 6px;
+  outline: 0;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+  box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+.btn,.btn-primary {
+  position: absolute;
+  top: 25%;
+  right: 43%;
+}
+/*留言板*/
+.content2 {
+  position:relative;
+
+}
+.content2 .entry {
+/*  position:relative;
+  left:-0.733333rem;*/
+}
+.content2 .entry .input-group {
+  /*position:absolute;*/
+  /*left: 7%;*/
+  /*top: 0;*/
+}
+.container{
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  /* 弹性 */
+  display: flex;
+  /* 设置方向 */
+  flex-direction: column;
+}
+.messageBox{
+
+  flex: 4;
+  position:relative;
+}
+.inputBox{
+  flex: 1;
+  display: flex;
+  width: 100%;
+}
+.messageBox .self {
+  /* height: 50px; */
+  line-height: 30px;
+  background: #e0e0e0;
+  border:10px solid #ccc;
+  font-size: 25px;
+  position: relative;
+  padding-left: 0.5rem;
+}
+.messageBox .self  span.time{
+  float: right;
+  font-size: 0.186667rem;
+}
+.messageBox .self .headShow{
+  position: absolute;
+  top: 0.02rem;
+  left:0rem;
+  /*background-color: pink;*/
+  width: 0.5rem;
+  height: 0.5rem;
+  /*background:   no-repeat;*/
+  /*background-size: 0.266667rem 0.266667rem;*/
+}
+.messageBox .self .headShow img{
+  width: 0.5rem;
+  height: 0.5rem;
+}
+.content1 .entry .input-groupz {
+    float: left;
+    margin-top: 0.133333rem;
+}
+.content1 .entry .input-groupz .form-control {
+    width: 6rem;
+    float: left;
+    border-right: none;
+    border-radius:  4px 0 0 4px;
+
+}
+.content1 .entry .input-groupz .input-group-addon {
+    width: 2.3rem;
+    float: left;
+    height: 0.553333rem;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-left:none;
+    color: #555;
+}

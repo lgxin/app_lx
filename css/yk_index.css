@@ -1,0 +1,173 @@
+body{
+	background-color: #F4F4F4;
+}
+.yk_layout{
+	min-width: 300px;/*适配小屏幕设备，为了保持布局正常*/
+	max-width: 750px;/*行业中设计图一般是640px 如果不限制，那么图片就会被拉伸，页面的显示效果会变差*/
+	margin: 0 auto;
+    position: relative;
+    
+}
+/*导航*/
+
+.yk_header{
+	min-width: 300px;
+    max-width: 750px;
+    margin: 0 auto;
+	position: fixed;
+	height: 1.1rem;
+	width: 100%;
+	background: #4DBAFF;
+	text-align: center;
+	font-size: 0.4rem;
+	line-height: 1.1rem;
+	color: #FFFFFF;
+	z-index: 10;
+}
+.yk_header a{
+	height: 1.1rem;
+	width: 1.1rem;
+}
+.yk_header img{
+	width: 100%;
+}
+
+/*.icon_back{
+	height: 80px;
+	width: 80px;
+	float: left;
+}
+.icon_more{
+	margin: 5px 10px 0 0;	
+	background-position: -80px 0;
+	height: 80px;
+	width: 80px;
+	float: right;
+}*/
+/*轮播图*/
+.yk_banner{
+    width: 100%;
+    position: relative;
+    top: 1.066rem;
+    overflow: hidden;
+}
+.yk_banner ul:nth-child(1){
+    width: 1000%;
+    -webkit-transform:translateX(-10%);
+    transform: translateX(-10%);
+}
+.yk_banner ul:nth-child(1) li{
+    width: 10%;
+    float: left;
+}
+.yk_banner ul:nth-child(1) li a{
+    width: 100%;
+    display: block;
+}
+.yk_banner ul:nth-child(1) li a img{
+    width: 100%;
+    display: block;
+}
+.yk_banner div ul:nth-child(1){
+    position: absolute;
+    width: 240px;
+    left: 50%;
+    bottom: 5px;
+    margin-left: -59px;
+}
+.yk_banner div ul:nth-child(1) li{
+	background: #FFF;
+    float: left;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+.yk_banner div ul:nth-child(1) li.now{
+    background: #3B77DB;
+}
+.yk_banner div ul:nth-child(1) li:first-child{
+    margin-left: 0;
+}
+.yk_now{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 30px;
+	background: rgba(0,0,0,0.5);	
+}
+.yk_pick_shop{
+	margin-top: 1.5rem;
+	background: #FFF;
+	height: 800px;
+	width: 100%;
+}
+h3{
+	color: #3C78DB;
+	position: absolute;
+	left: 50%;
+	width: 2.3rem;
+	margin-left: -1.15rem;
+	text-align: center;
+	height: 40px;
+	line-height: 62px;
+	background: #FFFFFF;
+	font-size: 0.36rem;
+}
+.yk_pick_shop div:nth-child(2),
+.yk_pick_shop div:nth-child(3){
+	border-top: 1px solid #DDDDDD;
+}
+.yk_pick_shop div:nth-child(3) img{
+	height: 3.92rem;
+}
+.yk_pick_shop div{
+	display: inline-block;
+	float: left;
+	width: 45%;
+	height: 4rem;
+	padding-top: 0.6rem;
+	margin-top: 30px;
+	margin-left: 4%;
+	vertical-align: middle;
+}
+.yk_pick_shop div a{
+	display: block;
+	width: 100%;
+	font-size: 0.3rem;
+}
+.yk_pick_shop div a span{
+	color: #A63646;
+}
+.yk_pick_shop div a p{
+	background-image: linear-gradient(0deg,#4AB4FA,#2A8AC7);
+	font-size: 0.2rem;
+	color: #FFF;
+	display: inline-block;
+	border-radius: 12px;
+	float: right;
+	height: 0.37rem;
+	line-height: 0.37rem;
+	text-align: center;
+	width:1.68rem;
+	margin-top: -0.18rem;
+}
+.yk_pick_shop div:nth-child(4),
+.yk_pick_shop div:nth-child(5){
+	margin-top:1.3rem;
+}
+.yk_pick_shop div img{
+	max-height: 300px;
+	width: 100%;
+	
+}
+.yk_pick_shop div:nth-child(3) img{
+	padding-right:44px;
+}
+@media screen and (max-width: 450px) {
+	.yk_pick_shop div a p{
+		width: 66px;
+		height: 17px;
+		line-height: 17px;
+	}
+}

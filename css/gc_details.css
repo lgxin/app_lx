@@ -1,0 +1,178 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	width: 10rem;
+	margin: 0 auto;
+}
+.gc_header{
+	height: 1.173333rem;
+	background: #4DB9FF;
+	overflow: hidden;
+	position: relative;
+}
+.gc_back{
+	width: 0.253333rem;
+	height: 0.453333rem;
+	position: absolute;
+	left: 0.426667rem;
+	top: 0.36rem;
+	background: url(../img/gcindex_back.gif) no-repeat;
+	background-size: contain;
+	display: block;
+}
+.gc_back a{
+	width: 0.253333rem;
+	height: 0.453333rem;
+	display: block;
+}
+.gc_moreCon{
+	width: 0.96rem;
+	height: 0.213333rem;
+	position: absolute;
+	top: 0.466667rem;
+	right: 0.4rem;
+}
+.gc_moreCon span{
+	display: inline-block;
+	width: 0.213333rem;
+	height: 0.213333rem;
+	border-radius: 0.106667rem;
+	background: #fff;
+	float: left;
+	margin: 0 0.053333rem;
+}
+.gc_header p{
+	display: inline-block;
+	position: absolute;
+	width: 3.226667rem;
+	height: 0.573333rem;
+	line-height: 0.573333rem;
+	font-size: 0.4rem;
+	left: 50%;
+	text-align: center;
+	margin-left: -1.613333rem;
+	margin-top: 0.28rem;
+	color: #FFFFFF;
+}
+/*轮播图*/
+.gc_banner{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.gc_banner ul:nth-child(1){
+    /*这个时候我们需要放下10张图片  我们宽度就要是父容器宽度的10倍*/
+    width: 700%;
+    -webkit-transform:translateX(-10.0rem);
+    transform: translateX(-10.0rem%);
+}
+.gc_banner ul:nth-child(1) li{
+    width: 10.0rem;
+    float: left;
+}
+.gc_banner ul:nth-child(1) li a{
+    width: 10.0rem;
+    display: block;
+}
+.gc_banner ul:nth-child(1) li a img{
+    width: 10.0rem;
+    display: block;
+}
+.gc_banner ul:nth-child(2){
+    position: absolute;
+    width: 2.266667rem;
+    height: 0.266667rem;
+    left: 50%;
+    bottom: 0.066667rem;
+    margin-left: -1.133333rem;
+}
+.gc_banner ul:nth-child(2) li{
+    float: left;
+    width: 0.266667rem;
+    height: 0.266667rem;
+    border-radius: 0.133333rem;
+    margin-left: 0.226667rem;
+    background: #fff
+}
+.gc_banner ul:nth-child(2) li.gc_now{
+    background: #4DB9FF;
+}
+.gc_banner ul:nth-child(2) li:first-child{
+    margin-left: 0;
+}
+.gc_now{
+	background: #4DB9FF;
+}
+/*景点详情介绍*/
+.gc_detTextCon{
+	padding: 0 0.666667rem;	
+}
+.gc_gaikuan{
+	margin-top: 0.2rem;
+}
+.gc_gaikuan p{
+	width: 100%;
+	font-size: 0.4rem;
+	color: #333333;
+	height: 0.733333rem;
+	line-height: 0.733333rem;
+}
+.gc_gaikuan p:first-child{
+	font-size: 0.453333rem;
+}
+.gc_gaikuan  .gc_btm{
+	width: 8.133333rem;
+	border-bottom:0.026667rem solid #DDDDDD;
+	margin: 0 0.266667rem;
+}
+.gc_tic{
+	display: inline-block;
+	height: 0.346667rem;
+	width: 0.373333rem;
+	background: url(../img/gc_icon.fw.png) no-repeat 0 0;
+	background-size:8.0rem 5.333333rem ;
+	line-height: 0.346667rem;
+	margin-right: 0.266667rem;
+}
+.gc_loc{
+	display: inline-block;
+	height: 0.466667rem;
+	width: 0.346667rem;
+	background: url(../img/gc_icon.fw.png) no-repeat 0 -0.666667rem;
+	background-size:8.0rem 5.333333rem ;
+	vertical-align: middle;
+	margin-right: 0.266667rem;
+}
+.gc_tel{
+	display: inline-block;
+	height:0.426667rem;
+	width: 0.413333rem;
+	background: url(../img/gc_icon.fw.png) no-repeat 0 -1.333333rem;
+	background-size:8.0rem 5.333333rem ;
+	vertical-align: middle;
+	margin-right: 0.266667rem;
+}
+.gc_jianjie{
+	margin-top: 0.4rem;
+}
+.gc_jianjie p{
+	font-size: 0.4rem;
+/*	height: 0.733333rem;*/
+	line-height: 0.733333rem;
+}
+.gc_jianjie p:first-child{
+	font-size: 0.453333rem;
+}
+.gc_pinjia{
+	margin-top: 0.4rem;
+}
+.gc_pinjia p{
+	font-size: 0.4rem;
+	height: 0.733333rem;
+	line-height: 0.733333rem;
+}
+.gc_pinjia p:first-child{
+	font-size: 0.453333rem;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>订单填写</title>
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/ql_common.css">
+    <link rel="stylesheet" href="css/ql_pay.css">
+    <script src='js/fixScreen750.js'></script>
+</head>
+<body>
+<div class="pay">
+    <div class="header pay_topbar clearfix">
+        <a href="ql_reserve.html" class="fa fa-angle-left f_left"></a>
+        订单填写
+    </div>
+    <div class="pay_main">
+        <div class="pay_tit">
+            <h3>武汉杜莎夫人蜡像馆（成人票）</h3>
+            <p>详细信息</p>
+        </div>
+        <div class="pay_date">
+            <div class="pay_date_sel clearfix">
+                <p class="f_left">使用日期</p>
+                <span class="f_right">更多日期<br>&yen;170</span>
+                <span class="f_right">明天<br>&yen;170</span>
+                <span class="f_right">今天不<br>可预订</span>
+            </div>
+            <div class="pay_num">
+                购买份数（最多可购3份）
+                <div class="change_box f_right">
+                    <span class="f_left plus">+</span>
+                    <input class="f_left checkitem" type="tel">
+                    <span class="f_left minus">-</span>
+                </div>
+            </div>
+        </div>
+        <div class="pay_other">
+            <i class="fa fa-cart-plus"></i>
+            同时购买该景点其他票
+            <i class="fa fa-angle-right f_right"></i>
+        </div>
+        <div class="pay_insur">
+            <div class="pay_insur_txt">
+                建议购买保险&nbsp;安心出游有保障
+                <a class="f_right">更多保险》</a>
+            </div>
+            <div class="pay_insur_sel">
+                <i class="fa fa-bookmark"></i>
+                平安武汉旅游景区门票保险
+                <span>普通型</span>
+                <span class="f_right">&yen;3/人</span>
+            </div>
+        </div>
+        <div class="pay_name">
+            <div class="pay_txt">
+                <span>出行人</span>&nbsp;&nbsp;
+                <span>需填写1人信息，接收确认短信</span>
+            </div>
+            <div class="pay_info">
+                <div class="pay_info_tit">
+                    <span>姓名</span>
+                    <span>需与证件上的名字一致</span>
+                    <div class="pay_lang_sel f_right">
+                        <span class="f_left">中</span>
+                        <span class="f_left">英</span>
+                    </div>
+                </div>
+                <div class="pay_info_con">
+                    <span>总额：<span class="allprice">173元</span></span>
+                    <span>明细&gt;</span>
+                    <a href="ql_order.html" class="f_right">去支付</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom pay_bottom">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</div>
+</body>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="js/pay.js"></script>
+<script>
+    $('.toggle').on('click', function() {
+        $('.menu').toggleClass('expanded');
+        $('span').toggleClass('hidden');
+        $('.container , .toggle').toggleClass('close');
+    });
+</script>
+</html>

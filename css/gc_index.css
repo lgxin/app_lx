@@ -1,0 +1,95 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	width: 10rem;
+	margin: 0 auto;
+}
+.gc_header{
+	height: 1.173333rem;
+	background: #4DB9FF;
+	overflow: hidden;
+	position: relative;
+}
+.gc_search{
+	width: 4.666667rem;
+	height: 0.733333rem;
+	line-height:  0.733333rem;
+	left: 50%;
+	margin-left: -2.373333rem;
+	top: 15%;
+	border-radius: 0.066667rem;
+	position: absolute;
+	font-size: 0.42rem;
+	padding-right: 0.666667rem
+}
+.gc_back{
+	width: 0.253333rem;
+	height: 0.453333rem;
+	position: absolute;
+	left: 0.426667rem;
+	top: 0.36rem;
+	background: url(../img/gcindex_back.gif) no-repeat;
+	background-size: contain;
+	display: block;
+}
+.gc_back a{
+	width: 0.253333rem;
+	height: 0.453333rem;
+	display: block;
+}
+.gc_search_ic{
+    width: 0.386667rem;
+    height: 0.386667rem;
+    position: absolute;
+    background: url(../img/gcindex_search.gif) no-repeat;
+    background-size: contain;
+    right: 2.1rem;
+    top: 0.343333rem;
+    display: block;
+    cursor: pointer;
+    padding: 0.066667rem;
+}
+/*内容区域*/
+.gc_content{
+	height: 16.08rem;
+	width: 10.0rem;
+}
+.gc_img{
+	height: 5.733333rem;
+	width: 10.0rem;
+	position: relative;
+	display: block;
+}
+.gc_img:first-child{
+	background: url(../img/gc_index1.gif) no-repeat;
+	background-size: contain;
+}
+.gc_img:nth-child(2){
+	background: url(../img/gc_index2.gif) no-repeat;
+	background-size: contain;
+}
+.gc_img:last-child{
+	background: url(../img/gc_index3.gif) no-repeat;
+	background-size: contain;
+}
+.gc_font{
+	width: 7.68rem;
+	height: 1.346667rem;
+	position: absolute;
+	top: 2.2rem;
+	right: 0.013333rem;
+}
+.gc_img:first-child .gc_font{
+	background: url(../img/gc_font1.gif);
+		background-size: contain;
+}
+.gc_img:nth-child(2) .gc_font {
+	background: url(../img/gc_font2.gif);
+		background-size: contain;
+}
+.gc_img:last-child .gc_font{
+	background: url(../img/gc_font3.gif);
+		background-size: contain;
+}
